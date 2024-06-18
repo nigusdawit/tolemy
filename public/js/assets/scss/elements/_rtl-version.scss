@@ -1,0 +1,212 @@
+// rtl version
+.footer-one-main-wrapper .footer-singl-wized.input-area .input-area-fill button{
+    left: 10px;
+    right: auto;
+}
+
+.progress-wrap {
+    position: fixed;
+    left: 30px;
+    right: auto;
+    bottom: 30px;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    border-radius: 50px;
+    z-index: 10000;
+    opacity: 1;
+    visibility: hidden;
+    transform: translateY(15px);
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.pricing-style-one .body .chek-area .single-check i {
+    margin-left: 10px;
+}
+.pricing-style-one {
+    padding: 35px 20px;
+}
+.accordion-area-one .accordion .accordion-item button::after {
+    margin-right: auto;
+    margin-left: 0;
+}
+.banner-two-area .banner-right-img {
+    left: 86px;
+    right: auto;
+}
+.banner-two-inner-content form .input-area button {
+    margin-right: 10px;
+    i{
+        transform: rotate(180deg);
+        margin-right: 10px;
+    }
+}
+.easy-steps-main-wrapper .single-steps-area::after {
+    right: 20px;
+}
+.easy-freature-area-wrapper .imge-thumb-vedio .video-play-button span {
+    left: 11%;
+}
+.case-area-start .title-left-area a i {
+    transform: rotate(180deg);
+}
+
+.single-blog-area-wrapper .inner-content .body .author-area a i {
+    margin-right: 10px;
+    transform: rotate(180deg);
+}
+.single-case-area-wrapper a {
+    i{
+        transform: rotate(180deg);
+    }
+}
+.nav-area-main ul li.has-dropdown {
+    position: relative;
+    margin-left: 38px;
+}
+.nav-area-main ul li.has-dropdown::after {
+    left: -20px;
+    right: auto;
+}
+.has-dropdown.mega-menu a.links-main::after {
+    left: -20px;
+    right: auto;
+}
+.nav-area-main ul li.has-dropdown {
+    position: relative;
+    margin-right: 20px;
+}
+.mega-menu-item{
+    li{
+        a{
+            text-align: right;
+            img{
+                margin-left: 15px;
+            }
+        }
+    }
+}
+.submenu{
+    text-align: right !important;
+    ul{
+        li{
+            a{
+                text-align: right !important;
+            }
+        }
+    }
+}
+
+.content-main-wrapper .user-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 60px;
+    margin-right: -127px;
+}
+
+.single-case-area-wrapper::after {
+    left: 0;
+    right: auto;
+    background: linear-gradient(90deg, #f5f5ff00 0%, #F0F0FF 100%);
+}
+.single-case-area-wrapper:hover::after {
+    width: 100%;
+    right: 0;
+    left: auto;
+}
+.banner-four-content .title span.right-tag {
+    left: 185px;
+    right: auto;
+}
+.banner-four-content .button-area-main .btn-only i{
+    transform: rotate(180deg);
+    margin-right: 10px;
+}
+.single-service-area-4 a i {
+    margin-right: 8px;
+    margin-left: 0;
+    transform: rotate(180deg);
+}
+
+.banner-four-content.five span.pre-title::after {
+    right: -20px;
+    left: auto;
+    background: linear-gradient(90deg, #d9d9d900  -26.71%, #E2E2FF 121.23%);
+}
+
+.banner-five-thumbnail .single-mp3-start {
+    left: -28%;
+    right: auto;
+}
+.banner-five-thumbnail .single-mp3-start.left {
+    right: -6%;
+    bottom: 18%;
+    left: auto;
+}
+.title-area img {
+    position: absolute;
+    right: 44%;
+    bottom: 10px;
+}
+.banner-five-thumbnail .mp3-click-icon-banner {
+    left: 40%;
+}
+.single-tab-main-content-area-five .thumbnail-image-large .vedio-icone {
+    position: absolute;
+    left: 67%;
+    top: 58%;
+}
+
+.vedio-icone .video-play-button span {
+    left: -5%;
+}
+.tab-vedio-five-main-wrapper .nav li button svg {
+    margin-top: -3px;
+    margin-right: 0;
+    margin-left: 10px;
+}
+.signle-voice-generator-case .read-more-btn-c i{
+    transform: rotate(180deg);
+}
+.main-cta-five .ca-main-content-wrapper-left {
+    padding: 80px 0;
+    margin-right: 80px;
+    margin-left: 0;
+}
+.nav-area-main nav ul li a {
+    font-weight: 500;
+}
+.single-use-case a.more-case-btn i {
+    margin-left: 0px;
+    margin-right: 10px;
+    transform: rotate(180deg);
+}
+
+@keyframes marquee-2 {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+@keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+}
+
+.single-tools-feature a.btn-lonly i {
+    margin-right: 8px;
+    margin-left: 0;
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+.fa-arrow-right{    
+    transform: rotate(180deg);
+}
+.rts-audio-bot-area ul li .nav-link .press-area .icon-audio {
+    margin-right: -20px;
+    margin-left: 0;
+}
+.single-form-s-wrapper {
+    text-align: right !important;
+}
