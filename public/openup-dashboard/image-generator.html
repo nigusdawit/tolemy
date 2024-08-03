@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/plugins/swiper.css">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
 </head>
 
 <body class="chatbot">
@@ -18,8 +19,8 @@
 
     <!-- header area -->
 
-    <!-- header area -->
-    <div class="header-area-one">
+     <!-- header area -->
+     <div class="header-area-one">
         <div class="container-30">
             <div class="col-lg-12">
                 <div class="header-inner-one">
@@ -32,37 +33,37 @@
                         </div>
                     </div>
                     <div class="header-right">
-                        <div class="button-area">
-                            <a href="javascript: void(0);" class="rts-btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
-                                <img src="assets/images/icons/02.svg" alt="icons">
-                                Update
+                        <!-- <div class="button-area"> -->
+                            <!-- <a href="javascript: void(0);" class="rts-btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"> -->
+                                <!-- <img src="assets/images/icons/02.svg" alt="icons">
+                                Update -->
                             </a>
                         </div>
                         <div class="action-interactive-area__header">
                             <div class="single_action__haeader search-action openuptip" flow="down" tooltip="Search">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M18.1247 17.2413L13.4046 12.5213C14.5388 11.1596 15.1044 9.41313 14.9837 7.6451C14.863 5.87707 14.0653 4.22363 12.7566 3.02875C11.4479 1.83388 9.72885 1.18955 7.95716 1.22981C6.18548 1.27007 4.49752 1.99182 3.24442 3.24491C1.99133 4.498 1.26958 6.18597 1.22932 7.95765C1.18906 9.72934 1.83339 11.4483 3.02827 12.7571C4.22315 14.0658 5.87658 14.8635 7.64461 14.9842C9.41264 15.1049 11.1591 14.5393 12.5208 13.4051L17.2408 18.1251L18.1247 17.2413ZM2.49966 8.12515C2.49966 7.01263 2.82956 5.92509 3.44764 5.00006C4.06573 4.07504 4.94423 3.35407 5.97206 2.92833C6.9999 2.50258 8.1309 2.39119 9.22204 2.60823C10.3132 2.82527 11.3155 3.361 12.1021 4.14767C12.8888 4.93434 13.4245 5.93662 13.6416 7.02776C13.8586 8.11891 13.7472 9.24991 13.3215 10.2777C12.8957 11.3056 12.1748 12.1841 11.2497 12.8022C10.3247 13.4202 9.23718 13.7501 8.12466 13.7501C6.63332 13.7485 5.20354 13.1553 4.14901 12.1008C3.09448 11.0463 2.50131 9.61648 2.49966 8.12515Z" fill="#525252" />
                                     <path d="M18.1247 17.2413L13.4046 12.5213C14.5388 11.1596 15.1044 9.41313 14.9837 7.6451C14.863 5.87707 14.0653 4.22363 12.7566 3.02875C11.4479 1.83388 9.72885 1.18955 7.95716 1.22981C6.18548 1.27007 4.49752 1.99182 3.24442 3.24491C1.99133 4.498 1.26958 6.18597 1.22932 7.95765C1.18906 9.72934 1.83339 11.4483 3.02827 12.7571C4.22315 14.0658 5.87658 14.8635 7.64461 14.9842C9.41264 15.1049 11.1591 14.5393 12.5208 13.4051L17.2408 18.1251L18.1247 17.2413ZM2.49966 8.12515C2.49966 7.01263 2.82956 5.92509 3.44764 5.00006C4.06573 4.07504 4.94423 3.35407 5.97206 2.92833C6.9999 2.50258 8.1309 2.39119 9.22204 2.60823C10.3132 2.82527 11.3155 3.361 12.1021 4.14767C12.8888 4.93434 13.4245 5.93662 13.6416 7.02776C13.8586 8.11891 13.7472 9.24991 13.3215 10.2777C12.8957 11.3056 12.1748 12.1841 11.2497 12.8022C10.3247 13.4202 9.23718 13.7501 8.12466 13.7501C6.63332 13.7485 5.20354 13.1553 4.14901 12.1008C3.09448 11.0463 2.50131 9.61648 2.49966 8.12515Z" fill="#083A5E" />
-                                </svg>
+                                </svg> -->
                                 <div class="search-opoup slide-down__click">
-                                    <input type="text" placeholder="Search">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <!-- <input type="text" placeholder="Search">
+                                    <i class="fa-solid fa-magnifying-glass"></i> -->
                                 </div>
                             </div>
                             <div class="single_action__haeader notification openuptip" flow="down" tooltip="Notification">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16.25 8.75V10.3662L17.9419 12.0581C18.0591 12.1753 18.125 12.3343 18.125 12.5V14.375C18.125 14.5408 18.0592 14.6997 17.9419 14.8169C17.8247 14.9342 17.6658 15 17.5 15H13.125V15.625C13.125 16.4538 12.7958 17.2487 12.2097 17.8347C11.6237 18.4208 10.8288 18.75 10 18.75C9.1712 18.75 8.37634 18.4208 7.79029 17.8347C7.20424 17.2487 6.875 16.4538 6.875 15.625V15H2.5C2.33424 15 2.17527 14.9342 2.05806 14.8169C1.94085 14.6997 1.875 14.5408 1.875 14.375V12.5C1.87504 12.3343 1.94091 12.1753 2.05812 12.0581L3.75 10.3662V8.125C3.75201 6.57622 4.32822 5.08319 5.36721 3.93462C6.4062 2.78605 7.83417 2.06352 9.375 1.90675V0.625H10.625V1.90675C11.2723 1.97291 11.9051 2.14078 12.5 2.40419V3.80156C11.7409 3.36005 10.8786 3.12667 10.0005 3.12498C9.12225 3.1233 8.25916 3.35337 7.49832 3.79196C6.73749 4.23055 6.10585 4.86213 5.66719 5.62293C5.22853 6.38373 4.99839 7.2468 5 8.125V10.625C4.99996 10.7907 4.93409 10.9497 4.81687 11.0669L3.125 12.7588V13.75H16.875V12.7588L15.1831 11.0669C15.0659 10.9497 15 10.7907 15 10.625V8.75H16.25ZM11.3258 16.9508C11.6775 16.5992 11.875 16.1223 11.875 15.625V15H8.125V15.625C8.125 16.1223 8.32254 16.5992 8.67417 16.9508C9.02581 17.3025 9.50272 17.5 10 17.5C10.4973 17.5 10.9742 17.3025 11.3258 16.9508ZM18.75 5C18.75 6.38071 17.6307 7.5 16.25 7.5C14.8693 7.5 13.75 6.38071 13.75 5C13.75 3.61929 14.8693 2.5 16.25 2.5C17.6307 2.5 18.75 3.61929 18.75 5Z" fill="#083A5E" />
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16.25 8.75V10.3662L17.9419 12.0581C18.0591 12.1753 18.125 12.3343 18.125 12.5V14.375C18.125 14.5408 18.0592 14.6997 17.9419 14.8169C17.8247 14.9342 17.6658 15 17.5 15H13.125V15.625C13.125 16.4538 12.7958 17.2487 12.2097 17.8347C11.6237 18.4208 10.8288 18.75 10 18.75C9.1712 18.75 8.37634 18.4208 7.79029 17.8347C7.20424 17.2487 6.875 16.4538 6.875 15.625V15H2.5C2.33424 15 2.17527 14.9342 2.05806 14.8169C1.94085 14.6997 1.875 14.5408 1.875 14.375V12.5C1.87504 12.3343 1.94091 12.1753 2.05812 12.0581L3.75 10.3662V8.125C3.75201 6.57622 4.32822 5.08319 5.36721 3.93462C6.4062 2.78605 7.83417 2.06352 9.375 1.90675V0.625H10.625V1.90675C11.2723 1.97291 11.9051 2.14078 12.5 2.40419V3.80156C11.7409 3.36005 10.8786 3.12667 10.0005 3.12498C9.12225 3.1233 8.25916 3.35337 7.49832 3.79196C6.73749 4.23055 6.10585 4.86213 5.66719 5.62293C5.22853 6.38373 4.99839 7.2468 5 8.125V10.625C4.99996 10.7907 4.93409 10.9497 4.81687 11.0669L3.125 12.7588V13.75H16.875V12.7588L15.1831 11.0669C15.0659 10.9497 15 10.7907 15 10.625V8.75H16.25ZM11.3258 16.9508C11.6775 16.5992 11.875 16.1223 11.875 15.625V15H8.125V15.625C8.125 16.1223 8.32254 16.5992 8.67417 16.9508C9.02581 17.3025 9.50272 17.5 10 17.5C10.4973 17.5 10.9742 17.3025 11.3258 16.9508ZM18.75 5C18.75 6.38071 17.6307 7.5 16.25 7.5C14.8693 7.5 13.75 6.38071 13.75 5C13.75 3.61929 14.8693 2.5 16.25 2.5C17.6307 2.5 18.75 3.61929 18.75 5Z" fill="#083A5E" />
-                                </svg>
+                                </svg> -->
 
                                 <div class="notification_main_wrapper slide-down__click">
-                                    <h3 class="title">
+                                    <!-- <h3 class="title">
                                         Notification<span class="count">5</span>
-                                    </h3>
+                                    </h3> -->
                                     <div class="notification__content">
-                                        <ul class="notification__items">
+                                        <!-- <ul class="notification__items">
                                             <li class="single__items">
-                                                <a class="single-link" href="#">
+                                                <a class="single-link" href="#"> -->
                                                     <div class="avatar">
                                                         <img src="assets/images/avatar/user.svg" alt="Popup Img" class="">
                                                     </div>
@@ -151,17 +152,17 @@
                                 </div>
                             </div>
                             <div class="single_action__haeader language  user_avatar__information openuptip" flow="down" tooltip="Notification">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M11.25 3.125V4.375H9.25C8.83816 6.14196 7.99661 7.77997 6.8 9.14375C7.70414 10.0661 8.79525 10.7843 10 11.25L9.55625 12.4C8.20367 11.8567 6.97802 11.0396 5.95625 10C4.9156 11.0255 3.68974 11.8442 2.34375 12.4125L1.875 11.25C3.07285 10.7429 4.16632 10.0182 5.1 9.1125C4.2552 8.08229 3.61842 6.89788 3.225 5.625H4.5375C4.85587 6.57383 5.3405 7.45844 5.96875 8.2375C6.93251 7.12787 7.6162 5.80335 7.9625 4.375H1.25V3.125H5.625V1.25H6.875V3.125H11.25ZM18.75 18.125H17.4062L16.4062 15.625H12.125L11.125 18.125H9.78125L13.5312 8.75H15L18.75 18.125ZM14.2625 10.275L12.625 14.375H15.9062L14.2625 10.275Z" fill="black" />
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M11.25 3.125V4.375H9.25C8.83816 6.14196 7.99661 7.77997 6.8 9.14375C7.70414 10.0661 8.79525 10.7843 10 11.25L9.55625 12.4C8.20367 11.8567 6.97802 11.0396 5.95625 10C4.9156 11.0255 3.68974 11.8442 2.34375 12.4125L1.875 11.25C3.07285 10.7429 4.16632 10.0182 5.1 9.1125C4.2552 8.08229 3.61842 6.89788 3.225 5.625H4.5375C4.85587 6.57383 5.3405 7.45844 5.96875 8.2375C6.93251 7.12787 7.6162 5.80335 7.9625 4.375H1.25V3.125H5.625V1.25H6.875V3.125H11.25ZM18.75 18.125H17.4062L16.4062 15.625H12.125L11.125 18.125H9.78125L13.5312 8.75H15L18.75 18.125ZM14.2625 10.275L12.625 14.375H15.9062L14.2625 10.275Z" fill="#083A5E" />
-                                </svg>
+                                </svg> -->
                                 <div class="user_information_main_wrapper slide-down__click language-area">
-                                    <ul class="select-language-area">
+                                    <!-- <ul class="select-language-area">
                                         <li><a href="#">English</a></li>
                                         <li><a href="#">Bangla</a></li>
                                         <li><a href="#">Hindi</a></li>
                                         <li><a href="#">Latin</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </div>
 
                             </div>
@@ -568,92 +569,87 @@
     <!-- header area End -->
 
 
-    <div class="dash-board-main-wrapper">
-        <div class="left-side-bar">
-            <div class="inner">
-                <div class="single-menu-wrapper">
-                    <a href="index.html" class="single-menu">
-                        <div class="icon">
-                            <img src="assets/images/icons/01.png" alt="icons">
-                        </div>
-                        <p>Home</p>
-                    </a>
-                    <a href="community-feed.html" class="single-menu">
-                        <div class="icon">
-                            <img src="assets/images/icons/02.png" alt="icons">
-                        </div>
-                        <p>Community Feed</p>
-                    </a>
-                    <a href="manage-subscription.html" class="single-menu">
-                        <div class="icon">
-                            <img src="assets/images/icons/03.png" alt="icons">
-                        </div>
-                        <p>Manage Subscription</p>
-                    </a>
-                </div>
-                <div class="single-menu-wrapper">
-                    <a href="chatbot.html" class="single-menu">
-                        <div class="icon">
-                            <img src="assets/images/icons/04.png" alt="icons">
-                        </div>
-                        <p>AI Chat Bot</p>
-                    </a>
-                    <a href="image-generator.html" class="single-menu active">
-                        <div class="icon">
-                            <img src="assets/images/icons/05.png" alt="icons">
-                        </div>
-                        <p>Image Generator</p>
-                    </a>
-                    <a href="voicegenerator.html" class="single-menu">
-                        <div class="icon">
-                            <img src="assets/images/icons/06.png" alt="icons">
-                        </div>
-                        <p>Voice Generate</p>
-                    </a>
-                </div>
-                <div class="single-menu-wrapper">
-                    <a href="#" class="single-menu">
-                        <div class="icon">
-                            <img src="assets/images/icons/07.png" alt="icons">
-                        </div>
-                        <p>Register</p>
-                    </a>
-                    <a class="collapse-btn collapsed single-menu" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        <div class="icon">
-                            <img src="assets/images/icons/08.png" alt="icons">
-                        </div>
-                        <p>Settings</p>
-                    </a>
-                    <div class="collapse" id="collapseExample">
-                        <ul class="submenu rts-default-sidebar-list">
-                            <li>
-                                <a href="faq.html">
-                                    <i class="fa-sharp fa-regular fa-user"></i>
-                                    <span>FAQ's</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="login.html">
-                                    <i class="fa-sharp fa-regular fa-shopping-bag"></i>
-                                    <span>log In</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="reset-password.html">
-                                    <i class="fa-sharp fa-regular fa-users"></i>
-                                    <span>Reset Password</span>
-                                </a>
-                            </li>
-                        </ul>
+   <!-- header area End -->
+   <div class="dash-board-main-wrapper">
+    <div class="left-side-bar">
+        <div class="inner">
+            <div class="single-menu-wrapper">
+                <a href="History.html" class="single-menu">
+                    <div class="icon">
+                        <img src="assets/images/icons/07.png" alt="icons">
                     </div>
-                    <a href="#" class="single-menu">
-                        <div class="icon">
-                            <img src="assets/images/icons/09.png" alt="icons">
-                        </div>
-                        <p>Logout</p>
-                    </a>
+                    <p>History</p>
+                </a>
+                <a href="image-generator.html" class="single-menu active">
+                    <div class="icon">
+                        <img src="assets/images/icons/04.png" alt="icons">
+                    </div>
+                    <p>Chat</p>
+                </a>
+                <a href="community-feed.html" class="single-menu">
+                    <div class="icon">
+                        <img src="assets/images/icons/02.png" alt="icons">
+                    </div>
+                    <p>Community</p>
+                </a>
+            </div>
+            <div class="single-menu-wrapper">
+                <a href="manage-subscription.html" class="single-menu">
+                    <div class="icon">
+                        <img src="assets/images/icons/03.png" alt="icons">
+                    </div>
+                    <p>Manage Subscription</p>
+                </a>
+                <a href="faq.html" class="single-menu">
+                    <div class="icon">
+                        <img src="assets/images/icons/08.png" alt="icons">
+                    </div>
+                    <p>FAQ'S</p>
+                </a>
+                <a href="../index.html" class="single-menu">
+                    <div class="icon">
+                        <img src="assets/images/icons/09.png" alt="icons">
+                    </div>
+                    <p>Logout</p>
+                </a>
+            </div>
+            <div class="single-menu-wrapper">
+                <!-- <a href="register.html" class="single-menu"> -->
+                    <div class="icon">
+                        <!-- <img src="assets/images/icons/07.png" alt="icons"> -->
+                    </div>
+                    <p>Register</p>
+                </a>
+                <a class="collapse-btn collapsed single-menu" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <div class="icon">
+                        <!-- <img src="assets/images/icons/08.png" alt="icons"> -->
+                    </div>
+                    <p>Settings</p>
+                </a>
+                <div class="collapse" id="collapseExample">
+                    <!-- <ul class="submenu rts-default-sidebar-list"> -->
+                        <li>
+                            <!-- <a href="faq.html"> -->
+                                <i class="fa-sharp fa-regular fa-user"></i>
+                                <span>FAQ's</span>
+                            </a>
+                        </li>
+                        <li>
+                            <!-- <a href="login.html"> -->
+                                <i class="fa-sharp fa-regular fa-shopping-bag"></i>
+                                <span>log In</span>
+                            </a>
+                        </li>
+                        <li>
+                            <!-- <a href="reset-password.html"> -->
+                                <i class="fa-sharp fa-regular fa-users"></i>
+                                <span>Reset Password</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </div>
             <div class="bottom-user">
                 <div class="user-wrapper">
                     <img src="assets/images/avatar/02.png" alt="avatar">
@@ -702,11 +698,11 @@
                                                 <img src="assets/images/generator/04.jpg" alt="generator">
                                             </a>
                                         </div>
-                                        <div class="gallery__images-item two">
+                                        <!-- <div class="gallery__images-item two">
                                             <a href="#2" class="gallery__images-link">
                                                 <img src="assets/images/generator/05.jpg" alt="generator">
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <!-- main item show in display -->
@@ -738,12 +734,12 @@
                                     <!-- light box hear -->
 
                                 </div>
-                                <div class="bottom-image">
-                                    <p>“A whimsical, bold, and colorful humanoid figure”</p>
+                                <!-- <div class="bottom-image"> -->
+                                    <!-- <p>“A whimsical, bold, and colorful humanoid figure”</p> -->
                                     <div class="botton-content-between">
                                         <div class="left-area">
                                             <img src="assets/images/icons/15.png" alt="icons">
-                                            <span class="tags">Power by openup</span>
+                                            <!-- <span class="tags">Powered by Tolemy</span> -->
                                         </div>
                                         <div class="share-reaction-area">
                                             <ul>
@@ -759,189 +755,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="single__question__answer">
-                    <div class="question_user">
-                        <div class="left_user_info">
-                            <img src="assets/images/avatar/03.png" alt="avatar">
-                            <div class="question__user">what is openup?</div>
-                        </div>
-                        <div class="edit__icon openuptip" tooltip="Edit It">
-                            <i class="fa-regular fa-pen-to-square"></i>
-                        </div>
-                    </div>
-                    <div class="answer__area">
-                        <div class="thumbnail">
-                            <img src="assets/images/avatar/04.png" alt="avatar">
-                        </div>
-                        <div class="answer_main__wrapper">
-                            <h4 class="common__title">Openup</h4>
-                            <p class="disc">
-                                The Open Unified Process, is a simplified version of the Rational Unified Process (RUP) used for agile and iterative software development. It was developed within the Eclipse Foundation and is based on the donation of process content by IBM. OpenUP targets small and colocated teams interested in agile and iterative development and is a lean Unified Process that applies iterative and incremental approaches within a structured lifecycle. It embraces a pragmatic approach and is positioned as an easy and flexible version of RUP [1][2][3]
-                            </p>
-                            <div class="generated_image__wraper">
-                                <div class="top-images-area gallery-image-generator">
-                                    <!-- main item show in display -->
-                                    <div class="gallery-display-item-wrapper">
-                                        <div class="gallery__images-item three">
-                                            <a href="#3" class="gallery__images-link">
-                                                <img src="assets/images/generator/06.jpg" alt="generator">
-                                            </a>
-                                        </div>
-                                        <div class="gallery__images-item four">
-                                            <a href="#4" class="gallery__images-link">
-                                                <img src="assets/images/generator/07.jpg" alt="generator">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <!-- main item show in display -->
-
-
-                                    <!-- light box hear -->
-                                    <div class="gallery__lightbox" id="3">
-                                        <div class="gallery__lightbox-content">
-                                            <a href="#0" class="close">
-                                                ×
-                                            </a>
-                                            <img src="assets/images/generator/06.jpg" class="gallery__lightbox-image" />
-                                            <a href="#4" class="next">
-                                                <i class="fas fa-chevron-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="gallery__lightbox" id="4">
-                                        <div class="gallery__lightbox-content">
-                                            <a href="#0" class="close">
-                                                ×
-                                            </a>
-                                            <img src="assets/images/generator/07.jpg" class="gallery__lightbox-image" />
-                                            <a href="#3" class="back">
-                                                <i class="fas fa-chevron-left"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- light box hear -->
-
-                                </div>
-                                <div class="bottom-image">
-                                    <p>“A whimsical, bold, and colorful humanoid figure”</p>
-                                    <div class="botton-content-between">
-                                        <div class="left-area">
-                                            <img src="assets/images/icons/15.png" alt="icons">
-                                            <span class="tags">Power by openup</span>
-                                        </div>
-                                        <div class="share-reaction-area">
-                                            <ul>
-                                                <li><a href="#" class="openuptip" tooltip="Save It"><i class="fa-regular fa-bookmark"></i></a></li>
-                                                <li><a href="#" class="openuptip" tooltip="Like"><i class="fa-light fa-thumbs-up"></i></a></li>
-                                                <li><a href="#" class="openuptip" tooltip="Unlike"><i class="fa-regular fa-thumbs-down"></i></a></li>
-                                                <li><a href="#" class="openuptip" tooltip="Download"><i class="fa-light fa-download"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single__question__answer">
-                    <div class="question_user">
-                        <div class="left_user_info">
-                            <img src="assets/images/avatar/03.png" alt="avatar">
-                            <div class="question__user">how to work Openup chat bot?</div>
-                        </div>
-                        <div class="edit__icon openuptip" tooltip="Edit It">
-                            <i class="fa-regular fa-pen-to-square"></i>
-                        </div>
-                    </div>
-                    <div class="answer__area">
-                        <div class="thumbnail">
-                            <img src="assets/images/avatar/04.png" alt="avatar">
-                        </div>
-                        <div class="answer_main__wrapper">
-                            <h4 class="common__title">Openup</h4>
-                            <p class="disc">
-                                Working with a chatbot involves several steps, from designing and building the bot to deploying and maintaining it. Here's a general overview of how to work with a chatbot:
-                            </p>
-                            <div class="order_list_answer">
-                                <ol>
-                                    <li>
-                                        <p>Define the Purpose: Determine the purpose and goals of the chatbot. What tasks or interactions do you want the bot to handle? Who is the target audience?</p>
-                                    </li>
-                                    <li>
-                                        <p>Define the Purpose: Determine the purpose and goals of the chatbot. What tasks or interactions do you want the bot to handle? Who is the target audience?</p>
-                                    </li>
-                                </ol>
-                            </div>
-                            <div class="generated_image__wraper">
-                                <div class="top-images-area gallery-image-generator">
-                                    <!-- main item show in display -->
-                                    <div class="gallery-display-item-wrapper">
-                                        <div class="gallery__images-item one">
-                                            <a href="#1" class="gallery__images-link">
-                                                <img src="assets/images/generator/04.jpg" alt="generator">
-                                            </a>
-                                        </div>
-                                        <div class="gallery__images-item two">
-                                            <a href="#2" class="gallery__images-link">
-                                                <img src="assets/images/generator/05.jpg" alt="generator">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <!-- main item show in display -->
-
-
-                                    <!-- light box hear -->
-                                    <div class="gallery__lightbox" id="1">
-                                        <div class="gallery__lightbox-content">
-                                            <a href="#" class="close">
-                                                ×
-                                            </a>
-                                            <img src="assets/images/generator/04.jpg" class="gallery__lightbox-image" />
-                                            <a href="#2" class="next">
-                                                <i class="fas fa-chevron-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="gallery__lightbox" id="2">
-                                        <div class="gallery__lightbox-content">
-                                            <a href="#" class="close">
-                                                ×
-                                            </a>
-                                            <img src="assets/images/generator/05.jpg" class="gallery__lightbox-image" />
-                                            <a href="#1" class="back">
-                                                <i class="fas fa-chevron-left"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- light box hear -->
-
-                                </div>
-                                <div class="bottom-image">
-                                    <p>“A whimsical, bold, and colorful humanoid figure”</p>
-                                    <div class="botton-content-between">
-                                        <div class="left-area">
-                                            <img src="assets/images/icons/15.png" alt="icons">
-                                            <span class="tags">Power by openup</span>
-                                        </div>
-                                        <div class="share-reaction-area">
-                                            <ul>
-                                                <li><a href="#" class="openuptip" tooltip="Save It"><i class="fa-regular fa-bookmark"></i></a></li>
-                                                <li><a href="#" class="openuptip" tooltip="Like"><i class="fa-light fa-thumbs-up"></i></a></li>
-                                                <li><a href="#" class="openuptip" tooltip="Unlike"><i class="fa-regular fa-thumbs-down"></i></a></li>
-                                                <li><a href="#" class="openuptip" tooltip="Download"><i class="fa-light fa-download"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
             <form action="#" class="search-form">
                 <input type="text" placeholder="Message openup...">
                 <button><i class="fa-regular fa-arrow-up"></i></button>
@@ -1035,6 +848,10 @@
 
         </div>
     </div>
+    <!-- Include p5.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <!-- Include your custom JavaScript file -->
+    <script src="main.js"></script>
 
 
 

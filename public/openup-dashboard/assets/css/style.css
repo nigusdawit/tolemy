@@ -16436,6 +16436,7 @@ body.sal-disabled [data-sal|=flip] {
   width: 100%;
   bottom: 0;
   max-width: 63%;
+  padding-bottom: 40px;
 }
 .main-center-content-m-left.center-content .search-form input {
   height: 56px;
