@@ -122,6 +122,20 @@ main.main-content {
 	mix-blend-mode: soft-light;
 	opacity: 0.7;
 } */
+  
+  .canvas-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 900px; /* Adjust width as needed */
+	height: 700px; /* Adjust height as needed */
+	overflow: hidden;
+  }
+  
+  #defaultCanvas0 {
+	transform: translateY(-35%) translateX(40%) scale(2.0); /* Move up and scale */
+  }
+  
 .main-shape {
 	left: 0;
 	top: 0;
@@ -132,6 +146,7 @@ main.main-content {
 	height: 100%;
 	z-index: -1;
 }
+
 .main-content-two {
 	background: var(--tg-black-three);
 }
@@ -648,6 +663,13 @@ label {
 .header-action .header-lang .dropdown-item:hover {
 	background: var(--tg-primary-color);
 }
+.header-action .header-btn .btn {
+    color: var(--tg-white);
+    font-size: 16px;
+    padding: 17px 26px; /* Adjust padding to modify button size */
+    margin-top: 8px; /* Add this line to move the button down */
+}
+
 .navbar-wrap ul li .sub-menu {
 	position: absolute;
 	left: 0;
@@ -725,7 +747,7 @@ label {
 	padding: 0;
 }
 .sticky-menu.menu-area.menu-area-two {
-	margin-top: 0;
+	margin-top: 3;
 	border-radius: 0;
 }
 #header-fixed-height.active-height {
@@ -823,6 +845,7 @@ label {
 .tg-mega-menu-wrap.black-bg-two .mega-menu-content .title a:hover {
     color: var(--tg-cyan);
 }
+
 
 
 /* header-two */
@@ -1243,6 +1266,47 @@ label {
 	color: var(--tg-black-three);
 }
 
+/* Sticky header adjustments */
+.header-area {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust top padding here */
+    height: 60px; /* Adjust height if necessary */
+}
+
+.header-logo {
+    margin-top: -5px; /* Move the logo up slightly */
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-nav-toggler {
+    margin-top: -5px; /* Move the dropdown button up slightly */
+}
+
+/* Media query adjustments for smaller screens */
+@media (max-width: 768px) {
+    .header-area {
+        padding: 8px 20px; /* Reduce padding for smaller screens */
+    }
+
+    .header-logo {
+        margin-top: -30px; /* Further move up on smaller screens */
+    }
+
+    .mobile-nav-toggler {
+        margin-top: -8px; /* Adjust the vertical position for mobile */
+    }
+}
+
 
 /*=============================
 	04. Banner
@@ -1522,6 +1586,14 @@ label {
 /*=============================
 	06. Video
 ===============================*/
+.small-text {
+	text-align: center;
+	color: grey;
+	font-size: 15px;
+	margin-top: 10px;
+	font-style: italic;
+  }
+  
 .video-area {
 	position: relative;
 	margin-bottom: 50px;
@@ -1662,6 +1734,15 @@ label {
 .vioces-content .list-wrap li {
 	position: relative;
 }
+.video-container iframe {
+	width: 100%;
+	height: 100%;
+	transform: scale(0.5); /* Scale the video to 90% */
+	transform-origin: top;  /* Make sure it scales out from the top */
+	object-fit: cover;      /* This ensures the video maintains its aspect ratio */
+  }
+  
+  
 .vioces-content .list-wrap li::before {
 	content: "";
 	position: absolute;
