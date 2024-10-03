@@ -1737,12 +1737,12 @@ label {
 .video-container iframe {
 	width: 100%;
 	height: 100%;
+	justify-content: center;
+ 	align-items: center;
 	transform: scale(0.5); /* Scale the video to 90% */
 	transform-origin: top;  /* Make sure it scales out from the top */
 	object-fit: cover;      /* This ensures the video maintains its aspect ratio */
   }
-  
-  
 .vioces-content .list-wrap li::before {
 	content: "";
 	position: absolute;
