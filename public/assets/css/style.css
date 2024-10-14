@@ -132,9 +132,7 @@ main.main-content {
 	overflow: hidden;
   }
   
-  #defaultCanvas0 {
-	transform: translateY(-35%) translateX(40%) scale(2.0); /* Move up and scale */
-  }
+
   
 .main-shape {
 	left: 0;
@@ -728,6 +726,7 @@ label {
 	visibility: visible;
 	transform: scale(1);
 }
+
 .sticky-menu {
 	position: fixed;
 	left: 0;
@@ -1305,6 +1304,11 @@ label {
     .mobile-nav-toggler {
         margin-top: -8px; /* Adjust the vertical position for mobile */
     }
+	
+		.sticky-menu {
+			height: 10% !important;
+		}
+	
 }
 
 
@@ -1830,7 +1834,61 @@ label {
 	color: var(--tg-gray-three);
 	line-height: 1.5;
 }
-
+/* Style for the p5.js container */
+/* This will be the outer wrapper that centers the canvas */
+/* Flexbox to center the sketch-frame */
+/* Flexbox to center the video area and its contents */
+/* Similar structure for p5.js visualization as the video-wrap */
+/* Add more space between the p5.js sketch and the text */
+/* Wrap the p5.js visualization and center it */
+/* Centering the p5.js canvas */
+.p5-wrap {
+	padding: 0 25px;
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+  }
+  section{
+	padding-bottom: 40px !important;
+  }
+  
+  .sketch-frame {
+	width: 400px;
+	height: 300px;
+	background-color: #f9f9f9;
+	border: 2px solid #ccc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  /* Add margin below the canvas to separate it from the text */
+  .p5-wrap .sketch-frame {
+	margin-bottom: 20px;
+  }
+  
+  /* SVG shape for background */
+  .p5-shape svg {
+	position: absolute;
+	left: 0;
+	bottom: -100px;
+	width: 100%;
+	z-index: -1;
+	height: 100% !important;
+  }
+  
+  /* Additional padding for the text */
+  .small-text {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 14px;
+	color: #666;
+  }
+  
+  
 /*=============================
 	08. About
 ===============================*/
@@ -2658,6 +2716,7 @@ label {
 	cursor: pointer;
 	color: var(--tg-gray-four);
 }
+
 .select2-results__option:hover {
 	background: var(--tg-cyan);
 }

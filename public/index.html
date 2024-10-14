@@ -206,34 +206,25 @@
                 </div>
             </section>
             <!-- banner-area-end -->
-
             <!-- video-area -->
-            <div class="video-area">
+            <!-- <div class="video-area">
                 <div class="video-shape">
                     <svg height="1192" viewBox="0 0 1920 1192" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke="url(#paint0_linear_2840_46)" stroke-width="7" stroke-dasharray="10 10" d="M-40.9996 902C-8.39405 961.001 87.0357 1262.13 234 1171.5C385.21 1078.25 424.961 618.039 479.564 680.288C534.166 742.538 625.164 842.979 735.172 706.451C845.181 569.923 839.697 412.37 1093.03 631.043C1346.36 849.717 1371.47 413.985 1477.97 274.534C1584.48 135.083 1738.61 381.41 1830.32 343.155C1922.04 304.9 1862.93 -74.0337 2236.96 18.2495" />
+                        <path stroke="url(#paint0_linear_2840_46)" stroke-width="7" stroke-dasharray="10 10" d="M-40.9996 902C-8.39405 961.001 87.0357 1262.13 234 1171.5C385.21 1078.25 424.961 618.039 479.564 680.288C534.166 742.538 625.164 842.979 735.172 706.451C845.181 569.923 839.697 412.37 1093.03 631.043C1346.36 849.717 1371.47 413.985 1477.97 274.534C1584.48 135.083 1738.61 381.41 1830.32 343.155C1922.04 304.9 1862.93 -74.0337 2236.96 18.2495"/>
                         <defs>
-                            <linearGradient id="paint0_linear_2840_46" x1="2117.79" y1="34.1404" x2="83.2194" y2="768.35"
-                                gradientUnits="userSpaceOnUse">
-                                <stop offset="0" stop-color="rgba(200 189 255)" />
-                                <stop offset="0.13824" stop-color="#BAA6FF" />
-                                <stop offset="0.337481" stop-color="#6721FF" />
-                                <stop offset="0.900573" stop-color="#180048" />
-                                <stop offset="1" stop-color="#00CBFF" />
+                            <linearGradient id="paint0_linear_2840_46" x1="2117.79" y1="34.1404" x2="83.2194" y2="768.35" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="rgba(200 189 255)"/>
+                                <stop offset="0.13824" stop-color="#BAA6FF"/>
+                                <stop offset="0.337481" stop-color="#6721FF"/>
+                                <stop offset="0.900573" stop-color="#180048"/>
+                                <stop offset="1" stop-color="#00CBFF"/>
                             </linearGradient>
                         </defs>
                     </svg>
-                </div>
-                <div class="container custom-container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div id="p5-container"></div>
-                             <!-- Container for p5.js sketch -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p class="small-text">*Move your mouse on the recursive tree to change its angles</p>
+                </div> -->
+
+            <!-- Script to include the p5.js sketch for the first visualization -->
+            <script src="public/assets/js/sketch.js"></script>
             <!-- video-area-end -->
 
             <!-- counter-area -->
@@ -263,7 +254,9 @@
             </section>
             <!-- counter-area-end -->
             <!-- voices-area -->
-            <section id="use-cases" class="vioces-area pt-130 pb-120">
+            <!-- First p5.js visualization -->
+<!-- voices-area for tabs including the creative tab -->
+<section id="use-cases" class="vioces-area pt-130 pb-120">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-9 col-lg-10">
@@ -278,114 +271,103 @@
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="data-tab" data-bs-toggle="tab" data-bs-target="#data-tab-pane" type="button" role="tab" aria-controls="data-tab-pane" aria-selected="true">
-                                <svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13.7127 8.42495C14.058 7.73002 14.6565 7.20756 15.4008 6.95539C15.7122 6.84959 16.0332 6.80901 16.3527 6.80756V2.68075C16.3527 1.4822 15.3618 0.506836 14.1441 0.506836H2.36486C1.14718 0.506836 0.15625 1.4822 0.15625 2.68075V17.1735C0.15625 18.3721 1.14718 19.3474 2.36486 19.3474H9.68935L9.60984 19.1199C9.28959 18.2003 9.35217 17.2177 9.78432 16.3489L13.7127 8.42495ZM3.10107 4.85466H11.9355C12.3426 4.85466 12.6717 5.1793 12.6717 5.5793C12.6717 5.9793 12.3426 6.30394 11.9355 6.30394H3.10107C2.69394 6.30394 2.36486 5.9793 2.36486 5.5793C2.36486 5.1793 2.69394 4.85466 3.10107 4.85466ZM3.10107 7.75321H11.1993C11.6064 7.75321 11.9355 8.07785 11.9355 8.47785C11.9355 8.87785 11.6064 9.20249 11.1993 9.20249H3.10107C2.69394 9.20249 2.36486 8.87785 2.36486 8.47785C2.36486 8.07785 2.69394 7.75321 3.10107 7.75321ZM8.25449 14.9996H3.10107C2.69394 14.9996 2.36486 14.675 2.36486 14.275C2.36486 13.875 2.69394 13.5503 3.10107 13.5503H8.25449C8.66161 13.5503 8.9907 13.875 8.9907 14.275C8.9907 14.675 8.66161 14.9996 8.25449 14.9996ZM3.10107 12.101C2.69394 12.101 2.36486 11.7764 2.36486 11.3764C2.36486 10.9764 2.69394 10.6518 3.10107 10.6518H9.7269C10.134 10.6518 10.4631 10.9764 10.4631 11.3764C10.4631 11.7764 10.134 12.101 9.7269 12.101H3.10107ZM19.006 10.967L15.0762 18.8938C14.8163 19.4163 14.3665 19.8076 13.8092 19.996L12.417 20.467C12.3382 20.4938 12.2565 20.5068 12.1777 20.5068C11.8722 20.5068 11.5866 20.3184 11.482 20.0177L11.0027 18.6474C10.8106 18.0967 10.8481 17.5068 11.1073 16.9858L15.0371 9.06046C15.2087 8.71263 15.509 8.45176 15.8808 8.32568C16.2519 8.19959 16.6516 8.22278 17.005 8.39379L18.3287 9.0293C18.6821 9.19886 18.9471 9.49452 19.0752 9.86046C19.2033 10.2264 19.179 10.6192 19.006 10.967Z" fill="currentColor" />
-                                    </svg>
                                 Science
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="math-tab" data-bs-toggle="tab" data-bs-target="#math-tab-pane" type="button" role="tab" aria-controls="math-tab-pane" aria-selected="false">
-                                <svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13.7127 8.42495C14.058 7.73002 14.6565 7.20756 15.4008 6.95539C15.7122 6.84959 16.0332 6.80901 16.3527 6.80756V2.68075C16.3527 1.4822 15.3618 0.506836 14.1441 0.506836H2.36486C1.14718 0.506836 0.15625 1.4822 0.15625 2.68075V17.1735C0.15625 18.3721 1.14718 19.3474 2.36486 19.3474H9.68935L9.60984 19.1199C9.28959 18.2003 9.35217 17.2177 9.78432 16.3489L13.7127 8.42495ZM3.10107 4.85466H11.9355C12.3426 4.85466 12.6717 5.1793 12.6717 5.5793C12.6717 5.9793 12.3426 6.30394 11.9355 6.30394H3.10107C2.69394 6.30394 2.36486 5.9793 2.36486 5.5793C2.36486 5.1793 2.69394 4.85466 3.10107 4.85466ZM3.10107 7.75321H11.1993C11.6064 7.75321 11.9355 8.07785 11.9355 8.47785C11.9355 8.87785 11.6064 9.20249 11.1993 9.20249H3.10107C2.69394 9.20249 2.36486 8.87785 2.36486 8.47785C2.36486 8.07785 2.69394 7.75321 3.10107 7.75321ZM8.25449 14.9996H3.10107C2.69394 14.9996 2.36486 14.675 2.36486 14.275C2.36486 13.875 2.69394 13.5503 3.10107 13.5503H8.25449C8.66161 13.5503 8.9907 13.875 8.9907 14.275C8.9907 14.675 8.66161 14.9996 8.25449 14.9996ZM3.10107 12.101C2.69394 12.101 2.36486 11.7764 2.36486 11.3764C2.36486 10.9764 2.69394 10.6518 3.10107 10.6518H9.7269C10.134 10.6518 10.4631 10.9764 10.4631 11.3764C10.4631 11.7764 10.134 12.101 9.7269 12.101H3.10107ZM19.006 10.967L15.0762 18.8938C14.8163 19.4163 14.3665 19.8076 13.8092 19.996L12.417 20.467C12.3382 20.4938 12.2565 20.5068 12.1777 20.5068C11.8722 20.5068 11.5866 20.3184 11.482 20.0177L11.0027 18.6474C10.8106 18.0967 10.8481 17.5068 11.1073 16.9858L15.0371 9.06046C15.2087 8.71263 15.509 8.45176 15.8808 8.32568C16.2519 8.19959 16.6516 8.22278 17.005 8.39379L18.3287 9.0293C18.6821 9.19886 18.9471 9.49452 19.0752 9.86046C19.2033 10.2264 19.179 10.6192 19.006 10.967Z" fill="currentColor" />
-                                    </svg>
                                 Mathematics
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="physics-tab" data-bs-toggle="tab" data-bs-target="#physics-tab-pane" type="button" role="tab" aria-controls="physics-tab-pane" aria-selected="false">
-                                <svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13.7127 8.42495C14.058 7.73002 14.6565 7.20756 15.4008 6.95539C15.7122 6.84959 16.0332 6.80901 16.3527 6.80756V2.68075C16.3527 1.4822 15.3618 0.506836 14.1441 0.506836H2.36486C1.14718 0.506836 0.15625 1.4822 0.15625 2.68075V17.1735C0.15625 18.3721 1.14718 19.3474 2.36486 19.3474H9.68935L9.60984 19.1199C9.28959 18.2003 9.35217 17.2177 9.78432 16.3489L13.7127 8.42495ZM3.10107 4.85466H11.9355C12.3426 4.85466 12.6717 5.1793 12.6717 5.5793C12.6717 5.9793 12.3426 6.30394 11.9355 6.30394H3.10107C2.69394 6.30394 2.36486 5.9793 2.36486 5.5793C2.36486 5.1793 2.69394 4.85466 3.10107 4.85466ZM3.10107 7.75321H11.1993C11.6064 7.75321 11.9355 8.07785 11.9355 8.47785C11.9355 8.87785 11.6064 9.20249 11.1993 9.20249H3.10107C2.69394 9.20249 2.36486 8.87785 2.36486 8.47785C2.36486 8.07785 2.69394 7.75321 3.10107 7.75321ZM8.25449 14.9996H3.10107C2.69394 14.9996 2.36486 14.675 2.36486 14.275C2.36486 13.875 2.69394 13.5503 3.10107 13.5503H8.25449C8.66161 13.5503 8.9907 13.875 8.9907 14.275C8.9907 14.675 8.66161 14.9996 8.25449 14.9996ZM3.10107 12.101C2.69394 12.101 2.36486 11.7764 2.36486 11.3764C2.36486 10.9764 2.69394 10.6518 3.10107 10.6518H9.7269C10.134 10.6518 10.4631 10.9764 10.4631 11.3764C10.4631 11.7764 10.134 12.101 9.7269 12.101H3.10107ZM19.006 10.967L15.0762 18.8938C14.8163 19.4163 14.3665 19.8076 13.8092 19.996L12.417 20.467C12.3382 20.4938 12.2565 20.5068 12.1777 20.5068C11.8722 20.5068 11.5866 20.3184 11.482 20.0177L11.0027 18.6474C10.8106 18.0967 10.8481 17.5068 11.1073 16.9858L15.0371 9.06046C15.2087 8.71263 15.509 8.45176 15.8808 8.32568C16.2519 8.19959 16.6516 8.22278 17.005 8.39379L18.3287 9.0293C18.6821 9.19886 18.9471 9.49452 19.0752 9.86046C19.2033 10.2264 19.179 10.6192 19.006 10.967Z" fill="currentColor" />
-                                    </svg>
-                                Art
+                            <button class="nav-link" id="creative-tab" data-bs-toggle="tab" data-bs-target="#creative-tab-pane" type="button" role="tab" aria-controls="creative-tab-pane" aria-selected="false">
+                                Creative
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="creative-tab" data-bs-toggle="tab" data-bs-target="#creative-tab-pane" type="button" role="tab" aria-controls="creative-tab-pane" aria-selected="false">
-                                <svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13.7127 8.42495C14.058 7.73002 14.6565 7.20756 15.4008 6.95539C15.7122 6.84959 16.0332 6.80901 16.3527 6.80756V2.68075C16.3527 1.4822 15.3618 0.506836 14.1441 0.506836H2.36486C1.14718 0.506836 0.15625 1.4822 0.15625 2.68075V17.1735C0.15625 18.3721 1.14718 19.3474 2.36486 19.3474H9.68935L9.60984 19.1199C9.28959 18.2003 9.35217 17.2177 9.78432 16.3489L13.7127 8.42495ZM3.10107 4.85466H11.9355C12.3426 4.85466 12.6717 5.1793 12.6717 5.5793C12.6717 5.9793 12.3426 6.30394 11.9355 6.30394H3.10107C2.69394 6.30394 2.36486 5.9793 2.36486 5.5793C2.36486 5.1793 2.69394 4.85466 3.10107 4.85466ZM3.10107 7.75321H11.1993C11.6064 7.75321 11.9355 8.07785 11.9355 8.47785C11.9355 8.87785 11.6064 9.20249 11.1993 9.20249H3.10107C2.69394 9.20249 2.36486 8.87785 2.36486 8.47785C2.36486 8.07785 2.69394 7.75321 3.10107 7.75321ZM8.25449 14.9996H3.10107C2.69394 14.9996 2.36486 14.675 2.36486 14.275C2.36486 13.875 2.69394 13.5503 3.10107 13.5503H8.25449C8.66161 13.5503 8.9907 13.875 8.9907 14.275C8.9907 14.675 8.66161 14.9996 8.25449 14.9996ZM3.10107 12.101C2.69394 12.101 2.36486 11.7764 2.36486 11.3764C2.36486 10.9764 2.69394 10.6518 3.10107 10.6518H9.7269C10.134 10.6518 10.4631 10.9764 10.4631 11.3764C10.4631 11.7764 10.134 12.101 9.7269 12.101H3.10107ZM19.006 10.967L15.0762 18.8938C14.8163 19.4163 14.3665 19.8076 13.8092 19.996L12.417 20.467C12.3382 20.4938 12.2565 20.5068 12.1777 20.5068C11.8722 20.5068 11.5866 20.3184 11.482 20.0177L11.0027 18.6474C10.8106 18.0967 10.8481 17.5068 11.1073 16.9858L15.0371 9.06046C15.2087 8.71263 15.509 8.45176 15.8808 8.32568C16.2519 8.19959 16.6516 8.22278 17.005 8.39379L18.3287 9.0293C18.6821 9.19886 18.9471 9.49452 19.0752 9.86046C19.2033 10.2264 19.179 10.6192 19.006 10.967Z" fill="currentColor" />
-                                    </svg>
-                                Interactive
+                            <button class="nav-link" id="physics-tab" data-bs-toggle="tab" data-bs-target="#physics-tab-pane" type="button" role="tab" aria-controls="physics-tab-pane" aria-selected="false">
+                                Physics
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="interactive-tab" data-bs-toggle="tab" data-bs-target="#interactive-tab-pane" type="button" role="tab" aria-controls="interactive-tab-pane" aria-selected="false">
+                              Interactive
                             </button>
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
+                        <!-- Data tab pane -->
                         <div class="tab-pane fade show active" id="data-tab-pane" role="tabpanel" aria-labelledby="data-tab">
                             <div class="video-wrap">
                                 <video class="live-video" loop autoplay muted>
                                     <source src="assets/videos/sciencedemofinal.mp4" type="video/mp4">
-                                    <source src="assets/videos/video_01.ogg" type="video/ogg">
                                 </video>
                             </div>
                         </div>
+
+                        <!-- Math tab pane -->
                         <div class="tab-pane fade" id="math-tab-pane" role="tabpanel" aria-labelledby="math-tab">
                             <div class="video-wrap">
                                 <video class="live-video" loop autoplay muted>
                                     <source src="assets/videos/mathdemofinal.mp4" type="video/mp4">
-                                    <source src="assets/videos/video_01.ogg" type="video/ogg">
                                 </video>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="physics-tab-pane" role="tabpanel" aria-labelledby="physics-tab">
-                            <div class="video-wrap">
-                                <video class="live-video" loop autoplay muted>
-                                    <source src="assets/videos/artdemofinal.mp4" type="video/mp4">
-                                    <source src="assets/videos/video_01.ogg" type="video/ogg">
-                                </video>
-                            </div>
-                        </div>
+
+                        <!-- creative tab pane -->
                         <div class="tab-pane fade" id="creative-tab-pane" role="tabpanel" aria-labelledby="creative-tab">
                             <div class="video-wrap">
                                 <video class="live-video" loop autoplay muted>
-                                    <source src="assets/videos/interactive_tab.mp4" type="video/mp4">
-                                    <source src="assets/videos/video_01.ogg" type="video/ogg">
+                                    <source src="assets/videos/artdemofinal.mp4" type="video/mp4">
                                 </video>
                             </div>
+                        </div>
+                        
+                        <!-- physics tab pane (Interactive Visualization) -->
+                        <div class="tab-pane fade" id="physics-tab-pane" role="tabpanel" aria-labelledby="physics-tab">
+                            <div class="video-wrap">
+                                <video class="live-video" loop autoplay muted>
+                                    <source src="assets/videos/interactivedemofinal..mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="interactive-tab-pane" role="tabpanel" aria-labelledby="interactive-tab-tab">
+                            <!-- <div class="section-title-three text-center mb-60 title-animation">
+                                <h2 class="title">Make it <span>interactive</span></h2>
+                            </div> -->
+                            <div class="p5-wrap">
+                              
+                                
+                                <div class="p5-shape">
+                                    <svg height="1192" viewBox="0 0 1920 1192" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <!-- Your SVG content here -->
+                                    </svg>
+                                </div>
+                                <div id="p5-container-1" class="sketch-frame"></div> <!-- Container for p5.js sketch -->
+                               
+                            </div>
+                            <p class="small-text">
+                                *Move your mouse to add more people (particles) to the crowd. Each individual avoids others when they get too close, while still trying to move toward the center of the nearby crowd. Inspired by real-world crowd behavior studies in behavioral science, this simulation models how groups of people react and interact in crowded environments.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </section>
+<style>
 
-                                <!-- </ul>               
-                                <div class="tab-content" id="myTabContent"></div>
-                                <div class="tab-pane fade show active" id="data-tab-pane" role="tabpanel" aria-labelledby="data-tab" >
-                                    <div class="video-wrap">
-                                        <video class="live-video" loop autoplay muted>
-                                            <source src="assets/videos/video_01.mp4" type="video/mp4">
-                                            <source src="assets/videos/video_01.ogg" type="video/ogg">
-                                        </video>
-                                    </div>
-                                </div>
-                                <div class="tab-content" id="myTabContent"></div>
-                                 <div class="tab-pane fade" id="math-tab-pane" role="tabpanel" aria-labelledby="math-tab" >
-                                        <div class="video-wrap">
-                                                <video class="live-video" loop autoplay muted>
-                                                    <source src="assets/videos/video_01.mp4" type="video/mp4">
-                                                    <source src="assets/videos/video_01.ogg" type="video/ogg">
-                                                </video>    
-                                         </div>
-                                    </div>
-                                 <div class="tab-pane fade" id="Physics-tab-pane"></div>
-                                    <div class="tab-pane fade" id="physics-tab-pane" role="tabpanel" aria-labelledby="Physics-tab" >
-                                        <div class="video-wrap">
-                                            <video class="live-video" loop autoplay muted>
-                                                <source src="assets/videos/video_01.mp4" type="video/mp4">
-                                                <source src="assets/videos/video_01.ogg" type="video/ogg">
-                                            </video>    
-                                     </div>
-                                </div>
-                                <div class="tab-content" id="myTabContent"></div>
-                                <div class="tab-pane fade" id="creative-tab-pane" role="tabpanel" aria-labelledby="creative-tab" >
-                                    <div class="video-wrap">
-                                        <video class="live-video" loop autoplay muted>
-                                            <source src="assets/videos/video_01.mp4" type="video/mp4">
-                                            <source src="assets/videos/video_01.ogg" type="video/ogg">
-                                        </video> 
-                                    </div>
-                                </div>                   -->
+</style>
+
+
+<!-- p5.js Visualization Area -->
+
+
+<!-- Description Section Below the Visualization -->
+
+
+
             <section class="writing-area pb-120">
                 <div class="container">
                     <div class="row">
@@ -521,475 +503,6 @@
             </section>
             <!-- writing-area-end -->
 
-            <!-- roadmap-area
-            <section class="roadmap-area pt-140 pb-130">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="section-title text-center mb-70">
-                                <h2 class="title title-animation">How it <span>works</span></h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-12 col-md-9">
-                            <div class="roadmap-timeline-wrap">
-                                <div class="roadmap-line" data-background="assets/img/brand/Line.svg"></div>
-                                <ul class="list-wrap">
-                                    <li>
-                                        <div class="roadmap-item">
-                                            <div class="roadmap-img wow fadeInLeft" data-wow-delay=".2s">
-                                                <img src="assets/img/images/roadmap_img01.png" alt="">
-                                                <span class="number">01</span>
-                                            </div>
-                                            <div class="roadmap-content wow fadeInRight" data-wow-delay=".2s">
-                                                <h4 class="title">Selecting an AI tool</h4>
-                                                <p>Choose from a variety of AI tools to write social media ads, hero sections, blog posts...</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="roadmap-item">
-                                            <div class="roadmap-img wow fadeInRight" data-wow-delay=".2s">
-                                                <img src="assets/img/images/roadmap_img02.png" alt="">
-                                                <span class="number">02</span>
-                                            </div>
-                                            <div class="roadmap-content wow fadeInLeft" data-wow-delay=".2s">
-                                                <h4 class="title">Write your keywords</h4>
-                                                <p>Explain to the AI ​​what you want to write. The more details, the better output.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="roadmap-item">
-                                            <div class="roadmap-img wow fadeInLeft" data-wow-delay=".2s">
-                                                <img src="assets/img/images/roadmap_img03.png" alt="">
-                                                <span class="number">03</span>
-                                            </div>
-                                            <div class="roadmap-content wow fadeInRight" data-wow-delay=".2s">
-                                                <h4 class="title">Let's the AI do its magic</h4>
-                                                <p>Our highly trained AI understands your details and generate unique and human-like content in seconds.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <!-- roadmap-area-end -->
-
-            <!-- pricing-area -->
-            <!-- <section class="pricing-area pb-110">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="section-title text-center mb-50">
-                                <h2 class="title title-animation">Money well <span>invested</span></h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pricing-item-wrap">
-                        <div class="pricing-billing-duration text-center">
-                            <div class="pricing-tab">
-                                <span class="tab-btn monthly_tab_title">Monthly</span>
-                                <span class="pricing-tab-switcher"></span>
-                                <span class="tab-btn annual_tab_title">Yearly</span>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-xl-4 col-lg-6 col-md-9 col-sm-10">
-                                <div class="pricing-item wow fadeInLeft" data-wow-delay=".2s">
-                                    <div class="pricing-shape">
-                                        <svg viewBox="0 0 410 616" fill="none" x="0px" y="0px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"  d="M85.6497 0.634114C102.343 1.89097 115.705 2.89697 134 22.4989C134.632 23.176 135.238 23.8305 135.823 24.4624C145.21 34.5995 149.203 38.9119 168.5 37.4993C179.699 36.6795 228.167 37.1659 251 37.4993H251.001C262.001 37.4993 270.501 37.4993 289 16C301.111 1.92454 315.232 0.174842 333.448 0H380C396.569 0 410 13.4315 410 30V586C410 602.569 396.569 616 380 616H30C13.4315 616 0 602.569 0 586V30C0 13.4315 13.4315 0 30 0H78.0075C80.6454 0.257338 83.1839 0.448462 85.6497 0.634114Z" fill="currentcolor" />
-                                        </svg>
-                                    </div>
-                                    <div class="pricing-top">
-                                        <div class="left-side">
-                                            <div class="icon">
-                                                <img src="assets/img/icon/pricing_icon.svg" alt="">
-                                            </div>
-                                            <div class="content">
-                                                <h4 class="title">Basic</h4>
-                                                <span>03 Services</span>
-                                            </div>
-                                        </div>
-                                        <div class="pricing-price">
-                                            <h2 class="title monthly_price">Free</h2>
-                                            <h2 class="title annual_price">Free</h2>
-                                        </div>
-                                    </div>
-                                    <div class="pricing-list">
-                                        <ul class="list-wrap">
-                                            <li>15 000 words/month</li>
-                                            <li>Write in 10 languages</li>
-                                            <li>Image generation (40/month)</li>
-                                            <li class="delete">25+ languages</li>
-                                            <li class="delete">Unlimited projects</li>
-                                            <li class="delete">Unlimited Marvel Chat</li>
-                                            <li class="delete">New experimental features</li>
-                                        </ul>
-                                    </div>
-                                    <div class="pricing-btn">
-                                        <a href="login.html" class="btn btn-two">choose plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-9 col-sm-10">
-                                <div class="pricing-item active wow fadeInUp" data-wow-delay=".5s">
-                                    <span class="popular">Most popular</span>
-                                    <div class="pricing-shape">
-                                        <svg viewBox="0 0 410 616" fill="none"  x="0px" y="0px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M85.6497 0.634114C102.343 1.89097 115.705 2.89697 134 22.4989C134.632 23.176 135.238 23.8305 135.823 24.4624C145.21 34.5995 149.203 38.9119 168.5 37.4993C179.699 36.6795 228.167 37.1659 251 37.4993H251.001C262.001 37.4993 270.501 37.4993 289 16C301.111 1.92454 315.232 0.174842 333.448 0H380C396.569 0 410 13.4315 410 30V586C410 602.569 396.569 616 380 616H30C13.4315 616 0 602.569 0 586V30C0 13.4315 13.4315 0 30 0H78.0075C80.6454 0.257338 83.1839 0.448462 85.6497 0.634114Z"
-                                                fill="url(#pricing)" />
-                                            <defs>
-                                                <linearGradient id="pricing" x1="-35.4999" y1="-46.5001" x2="393.384" y2="749.254"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop offset="0.0246007" stop-color="#C8BDFF" />
-                                                    <stop offset="0.0246007" stop-color="#BAA6FF" />
-                                                    <stop offset="0.214137" stop-color="#6721FF" />
-                                                    <stop offset="0.486687" stop-color="#6721FF" />
-                                                    <stop offset="1" stop-color="#00CBFF" />
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                    <div class="pricing-top">
-                                        <div class="left-side">
-                                            <div class="icon">
-                                                <img src="assets/img/icon/pricing_icon.svg" alt="">
-                                            </div>
-                                            <div class="content">
-                                                <h4 class="title">Standard</h4>
-                                                <span>05 Services</span>
-                                            </div>
-                                        </div>
-                                        <div class="pricing-price">
-                                            <h2 class="title monthly_price">$39</h2>
-                                            <h2 class="title annual_price">$299</h2>
-                                        </div>
-                                    </div>
-                                    <div class="pricing-list">
-                                        <ul class="list-wrap">
-                                            <li>15 000 words/month</li>
-                                            <li>Write in 10 languages</li>
-                                            <li>Image generation (40/month)</li>
-                                            <li>25+ languages</li>
-                                            <li>Unlimited projects</li>
-                                            <li class="delete">Unlimited Marvel Chat</li>
-                                            <li class="delete">New experimental features</li>
-                                        </ul>
-                                    </div>
-                                    <div class="pricing-btn">
-                                        <a href="login.html" class="btn btn-two">choose plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-9 col-sm-10">
-                                <div class="pricing-item wow fadeInRight" data-wow-delay=".2s">
-                                    <div class="pricing-shape">
-                                        <svg viewBox="0 0 410 616" fill="none" x="0px" y="0px" preserveAspectRatio="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M85.6497 0.634114C102.343 1.89097 115.705 2.89697 134 22.4989C134.632 23.176 135.238 23.8305 135.823 24.4624C145.21 34.5995 149.203 38.9119 168.5 37.4993C179.699 36.6795 228.167 37.1659 251 37.4993H251.001C262.001 37.4993 270.501 37.4993 289 16C301.111 1.92454 315.232 0.174842 333.448 0H380C396.569 0 410 13.4315 410 30V586C410 602.569 396.569 616 380 616H30C13.4315 616 0 602.569 0 586V30C0 13.4315 13.4315 0 30 0H78.0075C80.6454 0.257338 83.1839 0.448462 85.6497 0.634114Z" fill="currentcolor" />
-                                        </svg>
-                                    </div>
-                                    <div class="pricing-top">
-                                        <div class="left-side">
-                                            <div class="icon">
-                                                <img src="assets/img/icon/pricing_icon.svg" alt="">
-                                            </div>
-                                            <div class="content">
-                                                <h4 class="title">Enterprise</h4>
-                                                <span>07 Services</span>
-                                            </div>
-                                        </div>
-                                        <div class="pricing-price">
-                                            <h2 class="title monthly_price">$99</h2>
-                                            <h2 class="title annual_price">$699</h2>
-                                        </div>
-                                    </div>
-                                    <div class="pricing-list">
-                                        <ul class="list-wrap">
-                                            <li>15 000 words/month</li>
-                                            <li>Write in 10 languages</li>
-                                            <li>Image generation (40/month)</li>
-                                            <li>25+ languages</li>
-                                            <li>Unlimited projects</li>
-                                            <li>Unlimited Marvel Chat</li>
-                                            <li>New experimental features</li>
-                                        </ul>
-                                    </div>
-                                    <div class="pricing-btn">
-                                        <a href="login.html" class="btn btn-two">choose plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <!-- pricing-area-end -->
-
-            <!-- tools-area -->
-            <!-- <section class="tools-area pb-140">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="section-title text-center mb-80">
-                                <h2 class="title title-animation">60+ Powerful <span>Copywriting</span> Tools</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center row-cols-1 row-cols-xl-5 row-cols-lg-3 row-cols-md-3 row-cols-sm-2">
-                        <div class="col">
-                            <div class="tools-item">
-                                <div class="tools-shape">
-                                    <svg viewBox="0 0 242 142" fill="none" x="0px" y="0px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g opacity="10">
-                                            <mask id="tools_1" fill="currentcolor">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.000152349 96C0.000152323 82 7.50015 73 26.223 76.38C43.8227 79.5573 73.5001 62.5 65.0001 34C58.0933 10.8417 68.4855 0.0152226 90.4537 0H212C228.569 0 242 13.4315 242 30V112C242 128.569 228.569 142 212 142H30C13.4315 142 0 128.569 0 112V30C0 29.9678 5.07887e-05 29.9356 0.00015229 29.9034L0.000152349 96Z" />
-                                            </mask>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.000152349 96C0.000152323 82 7.50015 73 26.223 76.38C43.8227 79.5573 73.5001 62.5 65.0001 34C58.0933 10.8417 68.4855 0.0152226 90.4537 0H212C228.569 0 242 13.4315 242 30V112C242 128.569 228.569 142 212 142H30C13.4315 142 0 128.569 0 112V30C0 29.9678 5.07887e-05 29.9356 0.00015229 29.9034L0.000152349 96Z" fill="currentcolor" />
-                                            <path d="M26.223 76.38L26.0454 77.3641L26.223 76.38ZM65.0001 34L64.0419 34.2858L65.0001 34ZM90.4537 0V-1L90.453 -1L90.4537 0ZM0.00015229 29.9034H1.00015L-0.999843 29.9002L0.00015229 29.9034ZM26.4007 75.3959C16.885 73.6781 9.97666 75.0628 5.44345 78.9101C0.915774 82.7526 -0.999848 88.8465 -0.999848 96H1.00015C1.00015 89.1535 2.83453 83.7474 6.73758 80.4349C10.6351 77.1272 16.8382 75.7019 26.0454 77.3641L26.4007 75.3959ZM64.0419 34.2858C68.1619 48.1001 63.0535 59.0984 54.7433 66.3139C46.3759 73.5791 34.8547 76.9221 26.4007 75.3959L26.0454 77.3641C35.191 79.0152 47.3083 75.4182 56.0546 67.8241C64.8581 60.1802 70.3384 48.3998 65.9584 33.7142L64.0419 34.2858ZM90.453 -1C79.3518 -0.992307 70.8801 1.74143 66.1178 7.69682C61.3389 13.673 60.5477 22.57 64.0419 34.2858L65.9584 33.7142C62.5458 22.2717 63.4972 14.1764 67.6798 8.94589C71.879 3.69466 79.5874 1.00753 90.4544 1L90.453 -1ZM90.4537 1H212V-1H90.4537V1ZM212 1C228.016 1 241 13.9837 241 30H243C243 12.8792 229.121 -1 212 -1V1ZM241 30V112H243V30H241ZM241 112C241 128.016 228.016 141 212 141V143C229.121 143 243 129.121 243 112H241ZM212 141H30V143H212V141ZM30 141C13.9837 141 1 128.016 1 112H-1C-1 129.121 12.8792 143 30 143V141ZM1 112V30H-1V112H1ZM1 30C1 29.9688 1.00005 29.9377 1.00015 29.9065L-0.999843 29.9002C-0.999948 29.9335 -1 29.9667 -1 30H1ZM1.00015 96V29.9034H-0.999848L-0.999848 96H1.00015Z" fill="currentcolor" mask="url(#tools_1)" />
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="tools-icon">
-                                    <i class="far fa-thumbs-up"></i>
-                                </div>
-                                <div class="tools-content">
-                                    <h4 class="title"><a href="login.html">Social media</a></h4>
-                                    <a href="login.html" class="link-btn">Select & Try<i class="far fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="tools-item">
-                                <div class="tools-shape">
-                                    <svg viewBox="0 0 242 142" fill="none"  x="0px" y="0px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g opacity="10">
-                                            <mask id="tools_2" fill="currentcolor">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.000152349 96C0.000152323 82 7.50015 73 26.223 76.38C43.8227 79.5573 73.5001 62.5 65.0001 34C58.0933 10.8417 68.4855 0.0152226 90.4537 0H212C228.569 0 242 13.4315 242 30V112C242 128.569 228.569 142 212 142H30C13.4315 142 0 128.569 0 112V30C0 29.9678 5.07887e-05 29.9356 0.00015229 29.9034L0.000152349 96Z" />
-                                            </mask>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.000152349 96C0.000152323 82 7.50015 73 26.223 76.38C43.8227 79.5573 73.5001 62.5 65.0001 34C58.0933 10.8417 68.4855 0.0152226 90.4537 0H212C228.569 0 242 13.4315 242 30V112C242 128.569 228.569 142 212 142H30C13.4315 142 0 128.569 0 112V30C0 29.9678 5.07887e-05 29.9356 0.00015229 29.9034L0.000152349 96Z" fill="currentcolor" />
-                                            <path d="M26.223 76.38L26.0454 77.3641L26.223 76.38ZM65.0001 34L64.0419 34.2858L65.0001 34ZM90.4537 0V-1L90.453 -1L90.4537 0ZM0.00015229 29.9034H1.00015L-0.999843 29.9002L0.00015229 29.9034ZM26.4007 75.3959C16.885 73.6781 9.97666 75.0628 5.44345 78.9101C0.915774 82.7526 -0.999848 88.8465 -0.999848 96H1.00015C1.00015 89.1535 2.83453 83.7474 6.73758 80.4349C10.6351 77.1272 16.8382 75.7019 26.0454 77.3641L26.4007 75.3959ZM64.0419 34.2858C68.1619 48.1001 63.0535 59.0984 54.7433 66.3139C46.3759 73.5791 34.8547 76.9221 26.4007 75.3959L26.0454 77.3641C35.191 79.0152 47.3083 75.4182 56.0546 67.8241C64.8581 60.1802 70.3384 48.3998 65.9584 33.7142L64.0419 34.2858ZM90.453 -1C79.3518 -0.992307 70.8801 1.74143 66.1178 7.69682C61.3389 13.673 60.5477 22.57 64.0419 34.2858L65.9584 33.7142C62.5458 22.2717 63.4972 14.1764 67.6798 8.94589C71.879 3.69466 79.5874 1.00753 90.4544 1L90.453 -1ZM90.4537 1H212V-1H90.4537V1ZM212 1C228.016 1 241 13.9837 241 30H243C243 12.8792 229.121 -1 212 -1V1ZM241 30V112H243V30H241ZM241 112C241 128.016 228.016 141 212 141V143C229.121 143 243 129.121 243 112H241ZM212 141H30V143H212V141ZM30 141C13.9837 141 1 128.016 1 112H-1C-1 129.121 12.8792 143 30 143V141ZM1 112V30H-1V112H1ZM1 30C1 29.9688 1.00005 29.9377 1.00015 29.9065L-0.999843 29.9002C-0.999948 29.9335 -1 29.9667 -1 30H1ZM1.00015 96V29.9034H-0.999848L-0.999848 96H1.00015Z" fill="currentcolor" mask="url(#tools_2)" />
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="tools-icon">
-                                    <i class="fal fa-swatchbook"></i>
-                                </div>
-                                <div class="tools-content">
-                                    <h4 class="title"><a href="login.html">Design</a></h4>
-                                    <a href="login.html" class="link-btn">Select & Try<i class="far fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="tools-item">
-                                <div class="tools-shape">
-                                    <svg viewBox="0 0 242 142" fill="none"  x="0px" y="0px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g opacity="10">
-                                            <mask id="tools_3" fill="currentcolor">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.000152349 96C0.000152323 82 7.50015 73 26.223 76.38C43.8227 79.5573 73.5001 62.5 65.0001 34C58.0933 10.8417 68.4855 0.0152226 90.4537 0H212C228.569 0 242 13.4315 242 30V112C242 128.569 228.569 142 212 142H30C13.4315 142 0 128.569 0 112V30C0 29.9678 5.07887e-05 29.9356 0.00015229 29.9034L0.000152349 96Z" />
-                                            </mask>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.000152349 96C0.000152323 82 7.50015 73 26.223 76.38C43.8227 79.5573 73.5001 62.5 65.0001 34C58.0933 10.8417 68.4855 0.0152226 90.4537 0H212C228.569 0 242 13.4315 242 30V112C242 128.569 228.569 142 212 142H30C13.4315 142 0 128.569 0 112V30C0 29.9678 5.07887e-05 29.9356 0.00015229 29.9034L0.000152349 96Z" fill="currentcolor" />
-                                            <path d="M26.223 76.38L26.0454 77.3641L26.223 76.38ZM65.0001 34L64.0419 34.2858L65.0001 34ZM90.4537 0V-1L90.453 -1L90.4537 0ZM0.00015229 29.9034H1.00015L-0.999843 29.9002L0.00015229 29.9034ZM26.4007 75.3959C16.885 73.6781 9.97666 75.0628 5.44345 78.9101C0.915774 82.7526 -0.999848 88.8465 -0.999848 96H1.00015C1.00015 89.1535 2.83453 83.7474 6.73758 80.4349C10.6351 77.1272 16.8382 75.7019 26.0454 77.3641L26.4007 75.3959ZM64.0419 34.2858C68.1619 48.1001 63.0535 59.0984 54.7433 66.3139C46.3759 73.5791 34.8547 76.9221 26.4007 75.3959L26.0454 77.3641C35.191 79.0152 47.3083 75.4182 56.0546 67.8241C64.8581 60.1802 70.3384 48.3998 65.9584 33.7142L64.0419 34.2858ZM90.453 -1C79.3518 -0.992307 70.8801 1.74143 66.1178 7.69682C61.3389 13.673 60.5477 22.57 64.0419 34.2858L65.9584 33.7142C62.5458 22.2717 63.4972 14.1764 67.6798 8.94589C71.879 3.69466 79.5874 1.00753 90.4544 1L90.453 -1ZM90.4537 1H212V-1H90.4537V1ZM212 1C228.016 1 241 13.9837 241 30H243C243 12.8792 229.121 -1 212 -1V1ZM241 30V112H243V30H241ZM241 112C241 128.016 228.016 141 212 141V143C229.121 143 243 129.121 243 112H241ZM212 141H30V143H212V141ZM30 141C13.9837 141 1 128.016 1 112H-1C-1 129.121 12.8792 143 30 143V141ZM1 112V30H-1V112H1ZM1 30C1 29.9688 1.00005 29.9377 1.00015 29.9065L-0.999843 29.9002C-0.999948 29.9335 -1 29.9667 -1 30H1ZM1.00015 96V29.9034H-0.999848L-0.999848 96H1.00015Z" fill="currentcolor" mask="url(#tools_3)" />
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="tools-icon">
-                                    <i class="fal fa-code"></i>
-                                </div>
-                                <div class="tools-content">
-                                    <h4 class="title"><a href="login.html">Coding</a></h4>
-                                    <a href="login.html" class="link-btn">Select & Try<i class="far fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="tools-item">
-                                <div class="tools-shape">
-                                    <svg viewBox="0 0 242 142" fill="none"  x="0px" y="0px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g opacity="10">
-                                            <mask id="tools_4" fill="currentcolor">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.000152349 96C0.000152323 82 7.50015 73 26.223 76.38C43.8227 79.5573 73.5001 62.5 65.0001 34C58.0933 10.8417 68.4855 0.0152226 90.4537 0H212C228.569 0 242 13.4315 242 30V112C242 128.569 228.569 142 212 142H30C13.4315 142 0 128.569 0 112V30C0 29.9678 5.07887e-05 29.9356 0.00015229 29.9034L0.000152349 96Z" />
-                                            </mask>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.000152349 96C0.000152323 82 7.50015 73 26.223 76.38C43.8227 79.5573 73.5001 62.5 65.0001 34C58.0933 10.8417 68.4855 0.0152226 90.4537 0H212C228.569 0 242 13.4315 242 30V112C242 128.569 228.569 142 212 142H30C13.4315 142 0 128.569 0 112V30C0 29.9678 5.07887e-05 29.9356 0.00015229 29.9034L0.000152349 96Z" fill="currentcolor" />
-                                            <path d="M26.223 76.38L26.0454 77.3641L26.223 76.38ZM65.0001 34L64.0419 34.2858L65.0001 34ZM90.4537 0V-1L90.453 -1L90.4537 0ZM0.00015229 29.9034H1.00015L-0.999843 29.9002L0.00015229 29.9034ZM26.4007 75.3959C16.885 73.6781 9.97666 75.0628 5.44345 78.9101C0.915774 82.7526 -0.999848 88.8465 -0.999848 96H1.00015C1.00015 89.1535 2.83453 83.7474 6.73758 80.4349C10.6351 77.1272 16.8382 75.7019 26.0454 77.3641L26.4007 75.3959ZM64.0419 34.2858C68.1619 48.1001 63.0535 59.0984 54.7433 66.3139C46.3759 73.5791 34.8547 76.9221 26.4007 75.3959L26.0454 77.3641C35.191 79.0152 47.3083 75.4182 56.0546 67.8241C64.8581 60.1802 70.3384 48.3998 65.9584 33.7142L64.0419 34.2858ZM90.453 -1C79.3518 -0.992307 70.8801 1.74143 66.1178 7.69682C61.3389 13.673 60.5477 22.57 64.0419 34.2858L65.9584 33.7142C62.5458 22.2717 63.4972 14.1764 67.6798 8.94589C71.879 3.69466 79.5874 1.00753 90.4544 1L90.453 -1ZM90.4537 1H212V-1H90.4537V1ZM212 1C228.016 1 241 13.9837 241 30H243C243 12.8792 229.121 -1 212 -1V1ZM241 30V112H243V30H241ZM241 112C241 128.016 228.016 141 212 141V143C229.121 143 243 129.121 243 112H241ZM212 141H30V143H212V141ZM30 141C13.9837 141 1 128.016 1 112H-1C-1 129.121 12.8792 143 30 143V141ZM1 112V30H-1V112H1ZM1 30C1 29.9688 1.00005 29.9377 1.00015 29.9065L-0.999843 29.9002C-0.999948 29.9335 -1 29.9667 -1 30H1ZM1.00015 96V29.9034H-0.999848L-0.999848 96H1.00015Z" fill="currentcolor" mask="url(#tools_4)" />
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="tools-icon">
-                                    <i class="fal fa-bullhorn"></i>
-                                </div>
-                                <div class="tools-content">
-                                    <h4 class="title"><a href="login.html">Marketing</a></h4>
-                                    <a href="login.html" class="link-btn">Select & Try<i class="far fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="tools-item">
-                                <div class="tools-shape">
-                                    <svg viewBox="0 0 242 142" fill="none"  x="0px" y="0px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g opacity="10">
-                                            <mask id="tools_5" fill="currentcolor">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.000152349 96C0.000152323 82 7.50015 73 26.223 76.38C43.8227 79.5573 73.5001 62.5 65.0001 34C58.0933 10.8417 68.4855 0.0152226 90.4537 0H212C228.569 0 242 13.4315 242 30V112C242 128.569 228.569 142 212 142H30C13.4315 142 0 128.569 0 112V30C0 29.9678 5.07887e-05 29.9356 0.00015229 29.9034L0.000152349 96Z" />
-                                            </mask>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.000152349 96C0.000152323 82 7.50015 73 26.223 76.38C43.8227 79.5573 73.5001 62.5 65.0001 34C58.0933 10.8417 68.4855 0.0152226 90.4537 0H212C228.569 0 242 13.4315 242 30V112C242 128.569 228.569 142 212 142H30C13.4315 142 0 128.569 0 112V30C0 29.9678 5.07887e-05 29.9356 0.00015229 29.9034L0.000152349 96Z" fill="currentcolor" />
-                                            <path d="M26.223 76.38L26.0454 77.3641L26.223 76.38ZM65.0001 34L64.0419 34.2858L65.0001 34ZM90.4537 0V-1L90.453 -1L90.4537 0ZM0.00015229 29.9034H1.00015L-0.999843 29.9002L0.00015229 29.9034ZM26.4007 75.3959C16.885 73.6781 9.97666 75.0628 5.44345 78.9101C0.915774 82.7526 -0.999848 88.8465 -0.999848 96H1.00015C1.00015 89.1535 2.83453 83.7474 6.73758 80.4349C10.6351 77.1272 16.8382 75.7019 26.0454 77.3641L26.4007 75.3959ZM64.0419 34.2858C68.1619 48.1001 63.0535 59.0984 54.7433 66.3139C46.3759 73.5791 34.8547 76.9221 26.4007 75.3959L26.0454 77.3641C35.191 79.0152 47.3083 75.4182 56.0546 67.8241C64.8581 60.1802 70.3384 48.3998 65.9584 33.7142L64.0419 34.2858ZM90.453 -1C79.3518 -0.992307 70.8801 1.74143 66.1178 7.69682C61.3389 13.673 60.5477 22.57 64.0419 34.2858L65.9584 33.7142C62.5458 22.2717 63.4972 14.1764 67.6798 8.94589C71.879 3.69466 79.5874 1.00753 90.4544 1L90.453 -1ZM90.4537 1H212V-1H90.4537V1ZM212 1C228.016 1 241 13.9837 241 30H243C243 12.8792 229.121 -1 212 -1V1ZM241 30V112H243V30H241ZM241 112C241 128.016 228.016 141 212 141V143C229.121 143 243 129.121 243 112H241ZM212 141H30V143H212V141ZM30 141C13.9837 141 1 128.016 1 112H-1C-1 129.121 12.8792 143 30 143V141ZM1 112V30H-1V112H1ZM1 30C1 29.9688 1.00005 29.9377 1.00015 29.9065L-0.999843 29.9002C-0.999948 29.9335 -1 29.9667 -1 30H1ZM1.00015 96V29.9034H-0.999848L-0.999848 96H1.00015Z" fill="currentcolor" mask="url(#tools_5)" />
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="tools-icon">
-                                    <i class="fal fa-search-plus"></i>
-                                </div>
-                                <div class="tools-content">
-                                    <h4 class="title"><a href="login.html">SEO</a></h4>
-                                    <a href="login.html" class="link-btn">Select & Try<i class="far fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="more-btn text-center mt-30">
-                        <a href="login.html" class="gradient-btn gradient-btn-two btn-two">more tools & try for free</a>
-                    </div>
-                </div>
-            </section> -->
-            <!-- tools-area-end -->
-
-            <!-- testimonial-area -->
-            <!-- <section class="testimonial-area">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-10">
-                            <div class="section-title text-center mb-70">
-                                <h2 class="title title-animation"><span>6,000,000+</span> <br> Professionals & teams choose us</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item-wrap">
-                        <div class="row testimonial-active">
-                            <div class="col">
-                                <div class="testimonial-item">
-                                    <div class="testimonial-shape">
-                                        <svg viewBox="0 0 561 274" fill="none" x="0px" y="0px" preserveAspectRatio="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M97.8407 0H531C547.569 0 561 13.4315 561 30V244C561 260.569 547.569 274 531 274H127.841C111.272 274 97.8407 260.569 97.8407 244V78.4298C97.8407 66.4626 90.7283 55.6401 79.7433 50.8921L6.37287 19.1792C-3.59343 14.8715 -0.516972 0 10.3404 0H97.8407Z" fill="currentcolor" />
-                                        </svg>
-                                    </div>
-                                    <div class="testimonial-thumb">
-                                        <img src="assets/img/images/testi_avatar01.png" alt="">
-                                    </div>
-                                    <div class="testimonial-content">
-                                        <div class="rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <p>"As a content writer, I was initially skeptical about using an AI tool. But after trying it out, I have to say that I'm blown away by the results.</p>
-                                        <div class="testimonial-bottom">
-                                            <h5 class="title">Emily Johnson</h5>
-                                            <span>Podcast Host</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="testimonial-item">
-                                    <div class="testimonial-shape">
-                                        <svg viewBox="0 0 561 274" fill="none" x="0px" y="0px" preserveAspectRatio="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M97.8407 0H531C547.569 0 561 13.4315 561 30V244C561 260.569 547.569 274 531 274H127.841C111.272 274 97.8407 260.569 97.8407 244V78.4298C97.8407 66.4626 90.7283 55.6401 79.7433 50.8921L6.37287 19.1792C-3.59343 14.8715 -0.516972 0 10.3404 0H97.8407Z" fill="currentcolor" />
-                                        </svg>
-                                    </div>
-                                    <div class="testimonial-thumb">
-                                        <img src="assets/img/images/testi_avatar02.png" alt="">
-                                    </div>
-                                    <div class="testimonial-content">
-                                        <div class="rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <p>“I cant imagine my life without Goco.It has changed the game for me. I can put in a sentence or two of a generic idea and Goco. takes it in and in 30 seconds.</p>
-                                        <div class="testimonial-bottom">
-                                            <h5 class="title">les alexander</h5>
-                                            <span>Entrepreneur</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="testimonial-item">
-                                    <div class="testimonial-shape">
-                                        <svg viewBox="0 0 561 274" fill="none" x="0px" y="0px" preserveAspectRatio="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M97.8407 0H531C547.569 0 561 13.4315 561 30V244C561 260.569 547.569 274 531 274H127.841C111.272 274 97.8407 260.569 97.8407 244V78.4298C97.8407 66.4626 90.7283 55.6401 79.7433 50.8921L6.37287 19.1792C-3.59343 14.8715 -0.516972 0 10.3404 0H97.8407Z" fill="currentcolor" />
-                                        </svg>
-                                    </div>
-                                    <div class="testimonial-thumb">
-                                        <img src="assets/img/images/testi_avatar03.png" alt="">
-                                    </div>
-                                    <div class="testimonial-content">
-                                        <div class="rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <p>"I've been using the AI writing tool for a few months now, and it's completely transformed my workflow. Not only has it saved me time and energy."</p>
-                                        <div class="testimonial-bottom">
-                                            <h5 class="title">Michael Davis</h5>
-                                            <span>Content Writer</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="testimonial-item">
-                                    <div class="testimonial-shape">
-                                        <svg viewBox="0 0 561 274" fill="none" x="0px" y="0px" preserveAspectRatio="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M97.8407 0H531C547.569 0 561 13.4315 561 30V244C561 260.569 547.569 274 531 274H127.841C111.272 274 97.8407 260.569 97.8407 244V78.4298C97.8407 66.4626 90.7283 55.6401 79.7433 50.8921L6.37287 19.1792C-3.59343 14.8715 -0.516972 0 10.3404 0H97.8407Z" fill="currentcolor" />
-                                        </svg>
-                                    </div>
-                                    <div class="testimonial-thumb">
-                                        <img src="assets/img/images/testi_avatar04.png" alt="">
-                                    </div>
-                                    <div class="testimonial-content">
-                                        <div class="rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <p>"I was hesitant to invest in an AI writing tool, but after seeing the results it produced, I have no regrets. The tool has helped</p>
-                                        <div class="testimonial-bottom">
-                                            <h5 class="title">Jennifer Taylor</h5>
-                                            <span>Blogger</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <!-- testimonial-area-end -->
-
-        </main>
-        <!-- main-area-end -->
         <!-- cta-area -->
            <section class="cta-area">
             <div class="container">
@@ -1187,5 +700,7 @@
         <script src="assets/js/sketch.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+        <!-- <script src="assets/js/interactive.js"></script>  -->
     </body>
 </html>
